@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/marcportabellaclotet-mt/valstest/pkg/api"
+	"github.com/marcportabellaclotet-mt/vals/pkg/api"
 	"gopkg.in/yaml.v3"
 
 	"go.mozilla.org/sops/decrypt"

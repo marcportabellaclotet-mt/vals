@@ -3,7 +3,7 @@ package gcpsecrets
 import (
 	"testing"
 
-	"github.com/marcportabellaclotet-mt/valstest"
+	"github.com/marcportabellaclotet-mt/vals"
 )
 
 func Test_New(t *testing.T) {

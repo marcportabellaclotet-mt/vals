@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"github.com/marcportabellaclotet-mt/valstest"
+	"github.com/marcportabellaclotet-mt/vals"
 	"gopkg.in/yaml.v3"
 	"os"
 )

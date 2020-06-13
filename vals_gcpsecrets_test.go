@@ -7,7 +7,7 @@ import (
 )
 
 // setup:
-// echo -n "foo: bar" | gcloud secrets create valstestvar --data-file=- --replication-policy=automatic
+// echo -n "foo: bar" | gcloud secrets create valsvar --data-file=- --replication-policy=automatic
 // GCP_PROJECT=secret-test-99234 go test -run '^(TestValues_GCPSecretsManager)$'
 func TestValues_GCPSecretsManager(t *testing.T) {
 	projectId := os.Getenv("GCP_PROJECT")
@@ -22,7 +22,7 @@ func TestValues_GCPSecretsManager(t *testing.T) {
 	}{
 		{
 			"latest string",
-			map[string]string{"valstestvar": "foo: bar"},
+			map[string]string{"valsvar": "foo: bar"},
 			map[string]interface{}{
 				"provider": map[string]interface{}{
 					"name":    "gcpsecrets",
@@ -31,14 +31,14 @@ func TestValues_GCPSecretsManager(t *testing.T) {
 					"path":    projectId,
 				},
 				"inline": map[string]interface{}{
-					"valstestvar": "valstestvar",
+					"valsvar": "valsvar",
 				},
 			},
-			map[string]interface{}{"valstestvar": "foo: bar"},
+			map[string]interface{}{"valsvar": "foo: bar"},
 		},
 		{
 			"v1 string",
-			map[string]string{"valstestvar": "foo: bar"},
+			map[string]string{"valsvar": "foo: bar"},
 			map[string]interface{}{
 				"provider": map[string]interface{}{
 					"name":    "gcpsecrets",
@@ -47,14 +47,14 @@ func TestValues_GCPSecretsManager(t *testing.T) {
 					"path":    projectId,
 				},
 				"inline": map[string]interface{}{
-					"valstestvar": "valstestvar",
+					"valsvar": "valsvar",
 				},
 			},
-			map[string]interface{}{"valstestvar": "foo: bar"},
+			map[string]interface{}{"valsvar": "foo: bar"},
 		},
 		{
 			"v1 map",
-			map[string]string{"valstestvar": "foo: bar"},
+			map[string]string{"valsvar": "foo: bar"},
 			map[string]interface{}{
 				"provider": map[string]interface{}{
 					"name":    "gcpsecrets",
@@ -63,18 +63,18 @@ func TestValues_GCPSecretsManager(t *testing.T) {
 					"path":    projectId,
 				},
 				"inline": map[string]interface{}{
-					"valstestvar": "valstestvar",
+					"valsvar": "valsvar",
 				},
 			},
 			map[string]interface{}{
-				"valstestvar": map[string]interface{}{
+				"valsvar": map[string]interface{}{
 					"foo": "bar",
 				},
 			},
 		},
 		{
 			"latest map",
-			map[string]string{"valstestvar": "foo: bar"},
+			map[string]string{"valsvar": "foo: bar"},
 			map[string]interface{}{
 				"provider": map[string]interface{}{
 					"name":    "gcpsecrets",
@@ -83,11 +83,11 @@ func TestValues_GCPSecretsManager(t *testing.T) {
 					"path":    projectId,
 				},
 				"inline": map[string]interface{}{
-					"valstestvar": "valstestvar",
+					"valsvar": "valsvar",
 				},
 			},
 			map[string]interface{}{
-				"valstestvar": map[string]interface{}{
+				"valsvar": map[string]interface{}{
 					"foo": "bar",
 				},
 			},

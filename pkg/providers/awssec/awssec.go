@@ -3,8 +3,8 @@ package awssec
 import (
 	"errors"
 	"fmt"
-	"github.com/marcportabellaclotet-mt/valstest/pkg/api"
-	"github.com/marcportabellaclotet-mt/valstest/pkg/awsclicompat"
+	"github.com/marcportabellaclotet-mt/vals/pkg/api"
+	"github.com/marcportabellaclotet-mt/vals/pkg/awsclicompat"
 	"gopkg.in/yaml.v3"
 	"os"
 	"strings"
@@ -91,7 +91,7 @@ func (p *provider) GetStringMap(key string) (map[string]interface{}, error) {
 		return nil, err
 	}
 
-	metaKeysField := "github.com/marcportabellaclotet-mt/valstest"
+	metaKeysField := "github.com/marcportabellaclotet-mt/vals"
 	f, ok := meta[metaKeysField]
 	if !ok {
 		return nil, fmt.Errorf("%q not found", metaKeysField)

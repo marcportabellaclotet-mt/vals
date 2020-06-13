@@ -11,7 +11,7 @@ import (
 	smpb "google.golang.org/genproto/googleapis/cloud/secretmanager/v1beta1"
 
 	sm "cloud.google.com/go/secretmanager/apiv1beta1"
-	"github.com/marcportabellaclotet-mt/valstest/pkg/api"
+	"github.com/marcportabellaclotet-mt/vals/pkg/api"
 )
 
 // Format: ref+gcpsecrets://project/mykey[?version=VERSION]#/yaml_or_json_key/in/secret

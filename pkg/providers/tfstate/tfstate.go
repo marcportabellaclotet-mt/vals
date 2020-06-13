@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/marcportabellaclotet-mt/valstest/pkg/api"
+	"github.com/marcportabellaclotet-mt/vals/pkg/api"
 
 	"github.com/fujiwara/tfstate-lookup/tfstate"
 )

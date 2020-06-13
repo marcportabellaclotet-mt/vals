@@ -1,4 +1,4 @@
-module github.com/marcportabellaclotet-mt/valstest
+module github.com/marcportabellaclotet-mt/vals
 
 go 1.12
 
