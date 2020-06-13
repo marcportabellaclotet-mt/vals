@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/variantdev/vals/pkg/api"
+	"github.com/marcportabellaclotet-mt/valstest/pkg/api"
 	"gopkg.in/yaml.v3"
 )
 

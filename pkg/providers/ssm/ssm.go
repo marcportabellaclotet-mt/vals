@@ -3,8 +3,8 @@ package ssm
 import (
 	"errors"
 	"fmt"
-	"github.com/variantdev/vals/pkg/api"
-	"github.com/variantdev/vals/pkg/awsclicompat"
+	"github.com/marcportabellaclotet-mt/valstest/pkg/api"
+	"github.com/marcportabellaclotet-mt/valstest/pkg/awsclicompat"
 	"os"
 	"strconv"
 	"strings"

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/variantdev/vals/pkg/api"
+	"github.com/marcportabellaclotet-mt/valstest/pkg/api"
 )
 
 type provider struct {

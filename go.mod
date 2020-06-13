@@ -1,4 +1,4 @@
-module github.com/variantdev/vals
+module github.com/marcportabellaclotet-mt/valstest
 
 go 1.12
 

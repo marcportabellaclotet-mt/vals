@@ -3,13 +3,13 @@ package stringprovider
 import (
 	"fmt"
 
-	"github.com/variantdev/vals/pkg/api"
-	"github.com/variantdev/vals/pkg/providers/awssec"
-	"github.com/variantdev/vals/pkg/providers/gcpsecrets"
-	"github.com/variantdev/vals/pkg/providers/sops"
-	"github.com/variantdev/vals/pkg/providers/ssm"
-	"github.com/variantdev/vals/pkg/providers/tfstate"
-	"github.com/variantdev/vals/pkg/providers/vault"
+	"github.com/marcportabellaclotet-mt/valstest/pkg/api"
+	"github.com/marcportabellaclotet-mt/valstest/pkg/providers/awssec"
+	"github.com/marcportabellaclotet-mt/valstest/pkg/providers/gcpsecrets"
+	"github.com/marcportabellaclotet-mt/valstest/pkg/providers/sops"
+	"github.com/marcportabellaclotet-mt/valstest/pkg/providers/ssm"
+	"github.com/marcportabellaclotet-mt/valstest/pkg/providers/tfstate"
+	"github.com/marcportabellaclotet-mt/valstest/pkg/providers/vault"
 )
 
 func New(provider api.StaticConfig) (api.LazyLoadedStringProvider, error) {

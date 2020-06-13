@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/variantdev/vals/pkg/api"
+	"github.com/marcportabellaclotet-mt/valstest/pkg/api"
 
 	vault "github.com/hashicorp/vault/api"
 )

@@ -2,7 +2,7 @@ package vals
 
 import (
 	"fmt"
-	"github.com/variantdev/vals/pkg/api"
+	"github.com/marcportabellaclotet-mt/valstest/pkg/api"
 )
 
 type mapConfig struct {
